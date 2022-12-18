@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Assigment 1</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="main">
+                <div class="child">
+                    <div class="children">
+                        <h1 class="heading">
+                            JavaScript Assigment 1
+                        </h1>
+                    </div>
+                    <div class="children">
+                        <!-- Input -->
+                        <label for="" class="same" style="color: white;font-Size: larger"><b>Item</b></label>
+                        <input type="text" id="input" class="same" placeholder="Enter Item">
+                        <br>
+                        <label for="" class="same" style="color: white;font-Size: larger"><b>Index</b></label>
+                        <input type="text" id="input2" class="same" placeholder="Enter Index">
+                        <br>
+                        <!-- JavaScript Methods -->
+                        <h6 style="color: white;font-Size: larger">Select Any Operation to be perfomed</h6>
+                        <br>
+                        <div style="display: flex;justify-content: space-evenly;">
+                            <div style="color: white;font-Size: 18px;line-height: 35px;">
+                                <input type="radio" id="r1" name="fav_language" onclick="R1()">
+                                <button id="push" type="button" class="btn" onclick="PushItem()">Push</button>
+                                <br>
+                                <input type="radio" id="r2" name="fav_language" onclick="R2()">
+                                <button id="shift" type="button" class="btn" onclick="ShiftItem()">Shift</button>
+                                <br>
+                                <input type="radio" id="r3" name="fav_language" onclick="R3()">
+                                <button id="dlte" type="button" class="btn" onclick="DlteItem()">Delete</button>
+                                <br>
+                                <input type="radio" id="r4" name="fav_language" onclick="R4()">
+                                <button id="Indexof" type="button" class="btn" onclick="Indexxoff()">Index OF</button>
+                                <br>
+                                <input type="radio" id="r5" name="fav_language" onclick="R5()">
+                                <button id="Reverse" type="button" class="btn" onclick="Reversee()">Reverse</button>
+                                <br>
+                            </div>
+                            <div>
+                                <input type="radio" id="r6" name="fav_language" onclick="R6()">
+                                <button id="Pop" type="button" class="btn" onclick="PopItem()">Pop</button>
+                                <br>
+                                <input type="radio" id="r7" name="fav_language" onclick="R7()">
+                                <button id="Unshift" type="button" class="btn" onclick="Unshift()">Unshift</button>
+                                <br>
+                                <input type="radio" id="r8" name="fav_language" onclick="R8()">
+                                <button id="Sort" type="button" class="btn" onclick="Sortt()">Sort</button>
+                                <br>
+                                <input type="radio" id="r9" name="fav_language" onclick="R9()">
+                                <button id="valueat" type="button" class="btn" onclick="Valuee()">Value at</button>
+                                <br>
+                                <input type="radio" id="r10" name="fav_language" onclick="R10()">
+                                <button id="Update" type="button" class="btn" onclick="Updatee() ">Update</button>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                        <div style="display: flex;justify-content: center;margin: auto;">
+                            <button id="Confirm" type="button" class="btn" onclick="Confirm() ">Confirm
+                                Update</button>
+                        </div>
+                        <br>
+                        <!-- Initial Array -->
+                        <div style="color: white;font-Size: larger">
+                            <h5>Initial Array[]</h5>
+                            <div>
+                                <ul style="list-style: none;">
+                                    <li>Array[0] = Muaz</li>
+                                    <li>Array[1] = Talha</li>
+                                    <li>Array[2] = Shahab</li>
+                                    <li>Array[3] = Usama</li>
+                                    <li>Array[4] = Hamza</li>
+                                    <li>Array[5] = Hassan</li>
+                                    <li>Array[6] = Waleed</li>
+                                    <li>Array[7] = Amjad</li>
+                                    <li>Array[8] = Awais</li>
+                                    <li>Array[9] = Adnan</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <br>
+                        <!-- Changing Array -->
+                        <div style="color: white;font-Size: larger;text-align: start;">
+                            <h5>Changing Array[]</h5>
+                            <div>
+                                <ul id="list" style="list-style: none">
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script src="style.js"></script>
+</body>
+
+</html>
